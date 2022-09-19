@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible</title>
+    <style>
+      .whole {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background-color: palevioletred;
+      }
+      h1 {
+        text-align: center;
+        color: gold;
+        font-weight: bold;
+        font-size: 25px;
+        text-decoration: underline;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid;
+        display: block;
+        border-radius: 4px;
+        font-size: 20px;
+        color: white;
+        border-color: black;
+      }
+      img {
+        display: block;
+        border-radius: 10px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0px 10px 0px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: gold;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 10px 5px;
+        border: 0px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .learn-more {
+        padding-top: 10px;
+        text-decoration: none;
+        color: yellow;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .faith {
+        font-size: 15px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: lighter;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="whole">
+      <h1>I Enjoy reading religious books</h1>
+      <h2>My favourite book is a Bible</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/826/original/bible.jpg?1662709847"
+        alt="Bible"
+      />
+      <p>
+        The Bible is a collection of religious texts or scriptures sacred in
+        Christianity, Judaism, Samaritanism, and many other faiths. The Bible is
+        an anthology,a compilation of texts of a variety of forms originally
+        written in Hebrew, Aramaic, and Koine Greek.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Bible"
+        target="_blank"
+        class="learn-more"
+      >
+        Get to know more on wikipedia✍</a
+      >
+
+      <button>👉Get daily Bible verses</button>
+      <p class="faith">This page was built by Faith Ruth</p>
+    </div>
+    <script>
+      function dailyverses() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let favourite = prompt("What is your favourite book of the bible?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! you have sucessfully subscribed to the daily bible verses, you'll be receiving them on this email; " +
+            email
+        );
+      }
+      let versesbutton = document.querySelector("button");
+      versesbutton.addEventListener("click", dailyverses);
+    </script>
+  </body>
+</html>
